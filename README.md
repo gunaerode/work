@@ -2,6 +2,10 @@
 
 ---
 
+##### **Note**
+
+change dbUrl credentials in dbSchema.js
+
 ##### steps
 
 Note: Express generator allow you to create quick application skeleton for node.js
