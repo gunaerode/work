@@ -1,0 +1,76 @@
+* {
+  text-align: right;
+  font-family: 'Poiret One', cursive;
+}
+body {
+  background-image: url('../images/ruslan-valeev-unsplash.jpg');
+  background-size: contain;
+  font-weight: bold;
+}
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 1rem;
+}
+
+h1,
+p {
+  color: blue;
+  text-align: center;
+  cursor: pointer;
+}
+
+p {
+  color: purple;
+  line-height: 2rem;
+}
+
+p:first-child:first-line {
+  text-decoration: underline overline green;
+  text-transform: uppercase;
+}
+p:first-child:nth-child(2) {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 3rem;
+}
+
+footer p {
+  color: black;
+  text-align: center;
+}
+
+p:hover {
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+img {
+  float: right;
+}
+
+footer {
+  clear: both;
+}
+
+.para-wrapper {
+  background-color: rgba(170, 0, 0, 0.8);
+}
+
+.sample-para {
+  color: rgb(0, 0, 0);
+}
+
+.sample-para:first-child {
+  background-color: yellow;
+  color: red;
+}
+
+.sample-para:last-child {
+  background-color: rgb(80, 53, 53);
+  color: rgb(142, 233, 228);
+}
+
+.active {
+  color: rgb(255, 255, 255);
+}

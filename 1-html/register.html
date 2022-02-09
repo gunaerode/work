@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <a href="index.html">&#127968;</a> Login/Sign Up &#128060;
+        </h1>
+        <form action="">
+            <div class="field">
+                <label for="">First Name</label>
+                <input type="text" name="firstName" placeholder="Enter Name">
+            </div>
+            <br>
+            <div class="field">
+                <label for="">Last Name</label>
+                <input type="text" name="lastName" placeholder="Enter lastname">
+            </div>
+            <br>
+            <div class="field">
+                <label for="">Email</label>
+                <input type="email" name="email" required="required" placeholder="Enter email">
+            </div>
+            <br>
+            <div class="field">
+                <label for="">Password</label>
+                <input type="password" name="password" id="">
+            </div>
+            <div class="field">
+                <label for="">DOB</label>
+                <input type="date" name="date" id="">
+            </div>
+            <br>
+            <div class="field">
+                <label for="">Gender</label><br>
+                <input type="radio" name="gender" checked>Male
+                <input type="radio" name="gender">Female
+                <input type="radio" name="gender">Other
+            </div>
+            <br>
+            <div class="field">
+                <label for="">Pets</label><br>
+                <input type="checkbox" name="cat" id="cat" value="cat" checked>Cat
+                <input type="checkbox" name="dog" id="dog" value="dog">Dog
+            </div>
+            <br>
+            <div class="field">
+                <label for="">Cars</label><select name="cars" id="cars">
+                    <option value="">--select one--</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="Audi">Audi</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+<!-- <pre>
+    <hr>
+    GET - Default for Form 
+    <hr>
+    http://127.0.0.1:3000/udemy/zerotomastery/1-html/register.html
+    ?firstName=Malar&lastName=Guna&email=guna%40gmail.com&password=888ju8j&date=2022-01-27&gender=on&cat=on&cars=volvo
+    <hr>
+    POST - We can send as much as data we want
+</pre> -->
+
+</html>
