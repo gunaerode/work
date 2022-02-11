@@ -46,12 +46,48 @@
 - [Pseudo Classes](https://www.w3schools.com/css/css_pseudo_classes.asp) Special state of the element :active, :visited ...etc
 - [Pseudo Elements](https://www.w3schools.com/css/css_pseudo_elements.asp) - Specified part of the element like ::first-line, insert before & after content
 - [PX, EM, REM, % and VW, VH](https://elementor.com/help/whats-the-difference-between-px-em-rem-vw-and-vh/)
+- [Flex box](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - for layout creation 2D
 
 ##### Quiz practice css
 
 - [css selector game](https://css-diner.netlify.app/)
+- [css flexbox game](http://flexboxfroggy.com/)
 - [css exercise](https://www.w3schools.com/css/exercise.asp)
 - [css quiz](https://www.w3schools.com/css/css_quiz.asp)
+
+---
+
+##### NodeJs
+
+---
+
+- [Johny five](http://johnny-five.io/)
+- [state of servay](https://stateofjs.com/)
+- ##### ExpressJs
+
+  ##### Note:
+
+      ```npm install body-parser``` use this if express version is not 4.16+
+
+      ```app.use(bodyparser.urlencoded{extended: false}));
+      app.use(bodyparser.json());
+      ```
+
+  ** If you are using Express 4.16+ you can now replace that with:**
+
+      ```
+      app.use(express.urlencoded({extended: false}));
+      app.use(express.json());
+      ```
+
+###### Notes
+
+`globalThis` added in nodejs with ES2020 it's same as `window` in browser but properties will same as `global` in node REPL - checkout in both browser and node REPL
+
+ES6 imports might workon above version `12.2.0` or higher
+
+- If you want to work `modules` syntax need to use `.mjs` extention should added or `type="module"` should added on `package.json` file
+  - [import & export systax](https://javascript.info/import-export)
 
 #### Tools links
 
@@ -59,3 +95,13 @@
 - [Google fonts](https://fonts.google.com/specimen/Poiret+One?preview.size=30&query=poi)
 - [dog images apis](http://placecorgi.com/)
 - [robohash images apis](https://robohash.org/guna.png?size=400x400&bgset=bg1)
+
+---
+
+#### Git
+
+---
+
+##### links
+
+- [.gitignore](https://linuxize.com/post/gitignore-ignoring-files-in-git/)
