@@ -5,6 +5,7 @@
 #### Links
 
 - [ZTM Resource](https://zero-to-mastery.github.io/resources/)
+- [How DNS works](https://howdns.works/ep1/)
 
 ---
 
@@ -67,11 +68,11 @@
 
   ##### Note:
 
-      ```npm install body-parser``` use this if express version is not 4.16+
+  - `npm install body-parser` use this if express version is not 4.16+
 
-      ```app.use(bodyparser.urlencoded{extended: false}));
-      app.use(bodyparser.json());
-      ```
+    ```app.use(bodyparser.urlencoded{extended: false}));
+    app.use(bodyparser.json());
+    ```
 
   ** If you are using Express 4.16+ you can now replace that with:**
 
@@ -79,6 +80,9 @@
       app.use(express.urlencoded({extended: false}));
       app.use(express.json());
       ```
+
+  - **req.headers** Just a heads up that in the next lecture I am using `req.header` inside of a console.log to retrieve the header data in a GET route. Depending on which version of express.js you use, (a more recent version has changed the syntax) it now is `req.headers`. `req.header` will only return the function declaration.
+  - [nodejs.dev](https://nodejs.dev/learn/working-with-folders-in-nodejs)
 
 ###### Notes
 
