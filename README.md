@@ -48,6 +48,14 @@
 - [Pseudo Elements](https://www.w3schools.com/css/css_pseudo_elements.asp) - Specified part of the element like ::first-line, insert before & after content
 - [PX, EM, REM, % and VW, VH](https://elementor.com/help/whats-the-difference-between-px-em-rem-vw-and-vh/)
 - [Flex box](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - for layout creation 2D
+- ##### prefix
+
+  - [w3school prefix](https://www.w3schools.com/cssref/css3_browsersupport.asp)
+  - [caniuse](https://caniuse.com/)
+  - [shoudiuseprefix](http://shouldiprefix.com/#animations)
+  - [autofixer.github](https://autoprefixer.github.io/)
+
+- [transform article](https://thoughtbot.com/blog/transitions-and-transforms)
 
 ##### Quiz practice css
 
