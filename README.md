@@ -6,6 +6,7 @@
 
 - [ZTM Resource](https://zero-to-mastery.github.io/resources/)
 - [How DNS works](https://howdns.works/ep1/)
+- [ZTM web resources](https://zerotomastery.io/resources)
 
 ---
 
@@ -65,6 +66,46 @@
 - [css quiz](https://www.w3schools.com/css/css_quiz.asp)
 
 ---
+
+##### [Bootstrap 4](https://getbootstrap.com/docs/4.6/components/navbar/) &[ 5](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+
+---
+
+- In bootraps 5 `jumbotron` remove so use following `class=p-5 mb-4 bg-light rounded-3`
+- SEO Meta tag
+  - [view meta](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag)
+  - [Full background image](https://css-tricks.com/perfect-full-page-background-image/)
+  - [What is utf-8](https://www.quora.com/What-is-UTF8)
+  - [w3school meta tag](https://www.w3schools.com/tags/tag_meta.asp)
+- Depending on the Bootstrap version you are using, you may see a different effect. If you are using Bootstrap 5 or higher, then in your CSS file, I recommend adding this line of code for the hr tag in order to see similar effects as you would in the next video:
+
+```
+hr {
+    margin: 20px auto;
+    color: #F05F44;
+    border: 3px solid #F05F44;
+    max-width: 65px;
+    opacity: 1;
+}
+```
+
+- Mail chimp & Github page setup in bootstrap section
+- `animate.style` use CDN now old website we have to download and use the css files now [CDN](https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css) then provide
+
+##### Mailchimp
+
+---
+
+- [Form creation](https://mailchimp.com/en/help/add-a-signup-form-to-your-website/) - Menu -> Audience -> sign up form
+- [site link](https://guna.mailchimpsites.com/)
+- [Campaign](https://mailchi.mp/954b02e12d05/cody)
+
+##### Git & Github
+
+---
+
+- publish website with repo name <git-username>.github.io
+- second way create whatever repo you want Go to settings -> under github pages changes to master (then your website link will be published) webdev video 81(old one) & 82(New way) - add the website link in repo description
 
 ##### NodeJs
 

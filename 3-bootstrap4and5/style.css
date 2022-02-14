@@ -1,0 +1,8 @@
+.container {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+div {
+  border: 2px solid green;
+}
