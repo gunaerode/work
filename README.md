@@ -49,6 +49,27 @@
 - [Pseudo Elements](https://www.w3schools.com/css/css_pseudo_elements.asp) - Specified part of the element like ::first-line, insert before & after content
 - [PX, EM, REM, % and VW, VH](https://elementor.com/help/whats-the-difference-between-px-em-rem-vw-and-vh/)
 - [Flex box](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - for layout creation 2D
+
+  - The [`flex container`](https://www.w3schools.com/css/css3_flexbox_container.asp) properties are:
+
+    ````flex-direction
+    flex-wrap
+    flex-flow
+    justify-content
+    align-items
+    align-content```
+    ````
+
+  - The [`flex item`](https://www.w3schools.com/css/css3_flexbox_items.asp) properties are:
+
+    ````order
+    flex-grow
+    flex-shrink
+    flex-basis
+    flex
+    align-self```
+    ````
+
 - ##### prefix
 
   - [w3school prefix](https://www.w3schools.com/cssref/css3_browsersupport.asp)
@@ -91,6 +112,17 @@ hr {
 
 - Mail chimp & Github page setup in bootstrap section
 - `animate.style` use CDN now old website we have to download and use the css files now [CDN](https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css) then provide
+- [For bootstrap them changers](https://www.creative-tim.com/)
+- templates
+  - [bootstrap 0](https://mdbootstrap.com/freebies/)
+  - [bootstrap template 1](http://mashup-template.com/templates.html)
+  - [creative tim template](https://www.creative-tim.com/bootstrap-themes/ui-kit?direction=asc&sort=price)
+  - [bootstrap templates 2](https://startbootstrap.com/templates/)
+  - [animate.style](https://daneden.github.io/animate.css/)
+
+##### Chanllenge landing page
+
+- [challenge 8](https://github.com/zero-to-mastery/Coding_Challenge-8)
 
 ##### Mailchimp
 
@@ -106,6 +138,102 @@ hr {
 
 - publish website with repo name <git-username>.github.io
 - second way create whatever repo you want Go to settings -> under github pages changes to master (then your website link will be published) webdev video 81(old one) & 82(New way) - add the website link in repo description
+
+##### ReactJs
+
+---
+
+- [CRA website link](https://create-react-app.dev/docs/getting-started)
+- we can use `npx create-react-app my-app` if your `npm` version is less than **5.2** other vice `npm install -g create-react-app` and `create-react-app my-app` [link for older version](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f) but older version not recommended as of now.
+  - [what is npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)?
+  - [vscode extention](https://marketplace.visualstudio.com/items?itemName=jawandarajbir.react-vscode-extension-pack) from andrei & [me dsznajder.es7-react-js-snippets](https://github.com/dsznajder/vscode-react-javascript-snippets/blob/HEAD/docs/Snippets.md)
+- Note:
+  - One file you will see in the next video that no longer comes with the latest version of CRA is the `registerServiceworker.js`. Therefore you can ignore the `registerServiceworker()` in index.js that you will see in the next video since we will not be using it.
+- [Service workers](https://developers.google.com/web/fundamentals/primers/service-workers/)
+- ```
+  <Hello greetings={`Hey, Guna`} />
+
+  class component:
+  ---
+  class Hello extends Component {
+    render() {
+      return <div>hey</div>;
+      // single line doesn't need () but multiline line with root need
+    }
+  }
+
+  export default Hello
+  function component:
+  ---
+  function Hello() {
+    return ();
+  }
+  export default Hello;
+  ```
+
+- **What is a service worker**
+  A service worker is a script that your browser runs in the `background`, separate from a web page, opening the door to features that don't need a web page or user interaction. Today, they already include features like push notifications and background sync.
+- **React.Fragment and Semantic HTML**
+  One thing you will notice with React is that because we always have to return just one element from a component, we end up wrapping a lot of our components in <div></div>.
+
+  BUT WHAT ABOUT SEMANTIC HTML YOU TAUGHT US ABOUT IN THE HTML SECTION ANDREI!??!!
+
+  You are right! React realized this was an issue, and with the newer version of React 16.2, they introduced something called Fragment to fix this issue. [You can read about it here](https://blog.logrocket.com/rendering-sibling-elements-react-fragments/) (optional).
+
+- **Exercise:** Learn to Read the Docs
+  As a developer, you need to develop the muscle of being able to read the documentation website when you don't understand something. Here is a quick exercise:
+
+  What does <React.StrictMode> we see inside the index.js file do? Go look through the React documentation website and see if you can find out. You can find the answer at the link below!
+
+  https://reactjs.org/docs/strict-mode.html
+
+  - **Note**:
+    `Strict mode checks are run in development mode only; they do not impact the production build. `
+
+- **Notes `this`**
+  - `this` - how works with custom normal function in [class component & arrow function](https://reactjs.org/docs/handling-events.html)
+- **Quick Note: JSON Placeholder**
+  In the next video, I will be showing you how to use this: https://jsonplaceholder.typicode.com/
+
+  Sometimes, depending on incidents, the website may be down. In that case, you can use an alternative here: https://jsonplaceholder.cypress.io/
+
+  You will see how to use it in the next video!
+
+- class component [life cycle methods](https://reactjs.org/docs/react-component.html)
+- class component [lifecycle method check](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+- Every component has `props.children` either class or function component
+
+  - props
+  - state
+  - children ```<component>
+    <child component/>
+    </component> access with
+
+             function component(props) {
+               return {props.children} // return <h1>hey</h1> it will replace child-component
+             }
+        ```
+
+  - `Folder structure`
+    **components** - pure functions (doesn't use state management)
+    **containers** - manage states can't be pure functions
+
+- `Robofriens` final touch `destructuring` & `ternary operator` to reduce the code and finally `npm run build` https://cra.link/deployment
+  DEPLOYED URL [REPO](https://github.com/aneagoie/robofriends)
+  ```
+  npm install -g serve
+  serve -s build
+  serve -s build -l 4000
+  serve -h // for help
+  ```
+- ###### Migration
+  - `npm install` - first for cloned repo
+  - `npm audit fix`
+  - `npm update`
+  - `npm audit`
+  - `npm audit fix --force`
+- `ErrorBoundry` - will be more usefull in production because it wont break the page instead throws error-boundy error.
+- `ErrorBoundry` & `React.strictmode` both only work in `development` mode
 
 ##### NodeJs
 
@@ -146,8 +274,13 @@ ES6 imports might workon above version `12.2.0` or higher
 
 - [Specificity calculator](https://specificity.keegan.st/)
 - [Google fonts](https://fonts.google.com/specimen/Poiret+One?preview.size=30&query=poi)
-- [dog images apis](http://placecorgi.com/)
+- [[dog images apis](http://placecorgi.com/260/180)](http://placecorgi.com/)
 - [robohash images apis](https://robohash.org/guna.png?size=400x400&bgset=bg1)
+- ##### Free templates
+
+  - [Mashup templates](http://www.mashup-template.com/templates.html)
+
+- [CSS & Js Games learning](https://codepip.com/)
 
 ---
 
