@@ -70,6 +70,11 @@
     align-self```
     ````
 
+- `grid`
+
+  - **Note** in `grid` `grid-gap` has been changed to [**`gap`**](https://developer.mozilla.org/en-US/docs/Web/CSS/gap)
+  - `grid-template-columns: 1fr 1fr 1fr` === `grid-template-columns: repeat(3, 1fr)` 3 columns equally same gose for `grid-template-rows` and `grid-template-columns: auto 1fr 1fr;` first column removes padding and gives auto width for more content and it will extend
+
 - ##### prefix
 
   - [w3school prefix](https://www.w3schools.com/cssref/css3_browsersupport.asp)
@@ -220,12 +225,54 @@ hr {
 
 - `Robofriens` final touch `destructuring` & `ternary operator` to reduce the code and finally `npm run build` https://cra.link/deployment
   DEPLOYED URL [REPO](https://github.com/aneagoie/robofriends)
+
   ```
   npm install -g serve
   serve -s build
   serve -s build -l 4000
   serve -h // for help
   ```
+
+  ###### Face detection app
+
+  - npm packages used
+
+  1. [react-parallax-tilt](https://www.npmjs.com/package/react-parallax-tilt)
+  2. [react-ts-partices](https://www.npmjs.com/package/react-tsparticles)
+
+  ###### Robofriends _hooks_ (v16.8 implemented)
+
+  **Example:**
+  const [temp, setTemp] = useState(<initial-value>);
+
+  - `temp` - value
+  - `setTemp` - function
+
+  ```
+  useState -> allow you to set State like class component this.state={};
+  ```
+
+  - Inside lifecycle methods in class components this.state or this.props works because it's there core component but custome function wont work so use arrow function
+
+  ```
+  componentDidMount() {
+    fetch(url).then(res => res.json()).then(data => console.log(data));
+  }
+  ```
+
+  - empty array will allow to run useEffect one time like componentDidMount()
+
+  ```
+  useEffect(() => {
+    fetch(url).then(res => res.json()).then(data => console.log(data));
+  }, []);
+  ```
+
+  **Note**:
+
+  - class (life cycle methods) & function(hooks) can work side by side there is no plan to remove class components from `react.js`
+  - call hooks at top level (dont call inside conditional statements or functions)
+
 - ###### Migration
   - `npm install` - first for cloned repo
   - `npm audit fix`
@@ -291,3 +338,4 @@ ES6 imports might workon above version `12.2.0` or higher
 ##### links
 
 - [.gitignore](https://linuxize.com/post/gitignore-ignoring-files-in-git/)
+- [reactjs system limit react error](https://www.nicesnippets.com/blog/solved-system-limit-for-number-of-file-watchers-reached-reactjs)
