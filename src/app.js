@@ -4,6 +4,7 @@ const dbconnection = require('../config/dbconnection');
 const userRouter = require('./routes/users.router');
 const orderRouter = require('./routes/orders.router');
 const { errorHandler, _404 } = require('./middlewares/error.middleware');
+const authMiddleware = require('./middlewares/auth.middleware');
 
 const app = express();
 dbconnection();
@@ -11,6 +12,9 @@ dbconnection();
 // middlewares
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+// authMiddleware
+// app.use(authMiddleware);
 
 // user router
 app.use('/api/users', userRouter);

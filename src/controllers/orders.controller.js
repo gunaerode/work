@@ -4,8 +4,9 @@ const { Order, ObjectId } = require('../models/Orders');
 
 // place orders
 const createOrder = expressAsyncHandler(async (req, res) => {
-  const { product_name, type, quantity, price, total, user_id } = req?.body;
-
+  const { product_name, type, quantity, price, total } = req?.body;
+  console.log(req.user);
+  const { _id: user_id } = req?.user;
   if (!quantity) throw new Error('Quantity is not valid');
 
   try {

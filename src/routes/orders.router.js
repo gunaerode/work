@@ -4,9 +4,11 @@ const {
   getUserOrders
 } = require('../controllers/orders.controller');
 
+const authMiddleware = require('../middlewares/auth.middleware');
+
 const orderRouter = express.Router();
 
-orderRouter.post('/', createOrder);
-orderRouter.get('/:id', getUserOrders);
+orderRouter.post('/', authMiddleware, createOrder);
+orderRouter.get('/:id', authMiddleware, getUserOrders);
 
 module.exports = orderRouter;

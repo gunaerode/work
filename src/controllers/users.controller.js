@@ -21,6 +21,7 @@ const userSignup = expressAsyncHandler(async (req, res) => {
 // fetch all the users
 
 const fetchUsers = expressAsyncHandler(async (req, res, next) => {
+  console.log(req?.user, 'fetchuser');
   try {
     const allUsers = await User.find({});
     if (allUsers.length > 0) {
